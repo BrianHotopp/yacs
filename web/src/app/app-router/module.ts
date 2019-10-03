@@ -11,6 +11,11 @@ const routes: Routes = [
   { path: 'courses', component: ListingViewComponent },
   { path: 'schedules', component: ScheduleViewComponent },
   { path: 'about', component: AboutComponent},
+  { path: 'user', component: UserfunctionalityComponent,
+    children: [
+      path: 'doorman', component: DoormanComponent
+    ]
+  },
 ];
 
 @NgModule({

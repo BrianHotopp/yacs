@@ -53,7 +53,7 @@ import { SidebarService } from './services/sidebar.service';
     AboutComponent,
     NavUserComponent,
     TermSelectorComponent
-  ],
+  ],JavaScript importJavaScript import
   providers: [
     SelectionService,
     ConflictsService,
