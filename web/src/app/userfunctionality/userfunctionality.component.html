@@ -1,12 +1,13 @@
 <p>userfunctionality works!</p>
-/*
 
-this is the structure for the user functionality of yacs
+<!-- this is the structure for the user functionality of yacs
+
+
 UserfunctionalityComponent
 +
 |
-|DoormanComponent 
-+------------->
+|DoormanComponent
++-------------
 | this component handles:
 | logging in
 | forgot password
@@ -16,8 +17,8 @@ UserfunctionalityComponent
 |
 |
 |
-|DashboardComponent
-+-------------->
+|DashboardComponent (the user should only be able to see this component after they have logged in using the components contained in DoormanComponent)
++--------------
 | this component handles:
 | delete account
 | log out pages
@@ -35,7 +36,4 @@ v
 
 
 
-
-
-
-*/
+//this component checks whether or not the user is logged in and displays either the DoormanComponent(user is not yet logged in) or the DashboardComponent(user is logged in) -->
