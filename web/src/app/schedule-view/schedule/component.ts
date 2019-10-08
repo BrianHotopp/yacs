@@ -42,6 +42,8 @@ export class ScheduleComponent implements AfterViewInit {
   }
 
   public get hours (): string[] {
+    //returns a list of strings, ie ["8AM", "9 AM", "10 AM..."]. This list has enough elements to populate the y-axis
+    //of the calendar grid because it generates the elements dynamically using the startTime and endTime of sehcduleSet
     const hours = [];
     for (let time = this.scheduleSet.startTime; time < this.scheduleSet.endTime; time += 60) {
       hours.push(this.hourName(time));
@@ -88,6 +90,9 @@ export class ScheduleComponent implements AfterViewInit {
   }
 
   private hourName (minutes: number) {
+    //takes a time in minutes from 0 to 1440 (1440 being the max number of minutes in a day)
+    //this number of minutes is assumed to be divisible by 60
+    //returns a string with the time in an hourly human-readable format eg. 8 AM
     const hour = minutes / 60;
     if (hour === 0) {
       return '12 AM';

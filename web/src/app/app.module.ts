@@ -54,7 +54,7 @@ import { UserfunctionalityModule } from './userfunctionality/userfunctionality.m
     AboutComponent,
     NavUserComponent,
     TermSelectorComponent
-  ],
+  ],JavaScript importJavaScript import
   providers: [
     SelectionService,
     ConflictsService,
