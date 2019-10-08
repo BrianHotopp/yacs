@@ -4,13 +4,14 @@ import { SchoolViewComponent } from '../school-view/component';
 import { ListingViewComponent } from '../listing-view/component';
 import { ScheduleViewComponent } from '../schedule-view/component';
 import { AboutComponent } from '../about/component';
-
+import { UserfunctionalityComponent } from '../userfunctionality/userfunctionality.component';
 const routes: Routes = [
   { path: '', redirectTo: '/schools', pathMatch: 'full' },
   { path: 'schools', component: SchoolViewComponent },
   { path: 'courses', component: ListingViewComponent },
   { path: 'schedules', component: ScheduleViewComponent },
   { path: 'about', component: AboutComponent},
+  { path: 'user', component: UserfunctionalityComponent},
 ];
 
 @NgModule({

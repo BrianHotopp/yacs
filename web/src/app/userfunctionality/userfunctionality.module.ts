@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { UserfunctionalityComponent } from './userfunctionality.component';
+import { DoormanComponent } from './doorman.component';
+import { DashboardComponent } from './dashboard.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    UserfunctionalityComponent,
+    DoormanComponent,
+    DashboardComponent
+  ],
   imports: [
     CommonModule
   ]

@@ -29,7 +29,7 @@ import { ColorService } from './services/color.service';
 import { SelectedTermService } from './services/selected-term.service';
 import { SidebarService } from './services/sidebar.service';
 
-
+import { UserfunctionalityModule } from './userfunctionality/userfunctionality.module';
 @NgModule({
   imports: [
     BrowserModule,
@@ -43,7 +43,8 @@ import { SidebarService } from './services/sidebar.service';
     ListingViewModule,
     ScheduleViewModule,
     ListingModule,
-    SidebarModule
+    SidebarModule,
+    UserfunctionalityModule
   ],
   declarations: [
     AppComponent,
